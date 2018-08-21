@@ -1,7 +1,7 @@
 # City-Cafe
 食品网站
 
-预览地址:[https://yh390389859.github.io/City-Cafe/](https://yh390389859.github.io/City-Cafe/)
+预览地址:[https://yh390389859.github.io/City-Cafe/home](https://yh390389859.github.io/City-Cafe/home)
 
 > 使用了bootstrap,jquery,瀑布流isotope插件
 
