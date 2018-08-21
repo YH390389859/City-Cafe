@@ -1,0 +1,471 @@
+#preload {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+}
+
+#preload > .status {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.icon {
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+
+/********导航条********/
+#top-nav .navbar-header {
+    width: 100%;
+}
+
+#top-nav {
+    background-color: transparent;
+    border: none;
+}
+
+#top-nav.scroll {
+    background-color: #333333;
+}
+
+#top-nav .navbar-brand {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#top-nav .navbar-brand img {
+    margin: auto;
+    border: 1px dashed white;
+    padding: 15px;
+    border-radius: 60px;
+}
+
+#top-nav #nav-collapse {
+    clear: both;
+    text-align: center;
+}
+
+#top-nav .nav-item > a {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#top-nav .selected > a {
+    color: lawngreen;
+}
+
+.nav-contanier {
+    display: inline-block;
+}
+
+#top-nav .nav-item > a:hover {
+    color: lawngreen;
+}
+
+@media (max-width: 768px) {
+    #top-nav {
+        background-color: #3c3c3c;
+    }
+
+    #top-nav #nav-collapse {
+        text-align: right;
+        padding-right: 50px;
+    }
+
+    #top-nav .navbar-brand {
+        width: auto;
+    }
+
+    #top-nav .navbar-toggle {
+        margin-top: 40px;
+    }
+}
+
+/*****************轮播图部分******************/
+#myCarousel .item {
+    position: relative;
+}
+
+#myCarousel .item > img {
+    margin-top: -150px;
+}
+
+#myCarousel .item > .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+
+#myCarousel .item > .title:nth-child(2),
+#myCarousel .item > .title:nth-child(3) {
+    left: 55%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+/*************内容*************/
+#about {
+    padding: 50px 0;
+}
+
+.module-title {
+    text-align: center;
+    font-family: "STxingkai";
+    color: lawngreen;
+    /*font-weight: 700;*/
+    font-size: 90px;
+}
+
+.module-desc {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+
+#about .img-feature {
+    width: 100%;
+}
+
+#about strong {
+    display: block;
+    margin-top: 30px;
+}
+
+/***************services*************/
+#services {
+    padding: 80px 0px;
+    background-color: gainsboro;
+}
+
+#services .box > h1 {
+    font-family: 'lishu';
+    text-align: center;
+}
+
+#services .box > p {
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+#services .box > img {
+    width: 100%;
+}
+
+#services .box {
+    text-align: center;
+    background-color: white;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+#services .box > .icon {
+    color: lawngreen;
+    font-size: 50px;
+}
+
+.box-pd-bottom {
+    padding-bottom: 20px;
+}
+
+/********************菜单******************************/
+#menu {
+    padding: 60px;
+}
+
+#menu .box {
+    background-color: #e3e3e3;
+    padding: 25px;
+    margin: 0 10px 20px;
+}
+
+#menu .name {
+    font-size: 20px;
+    color: dimgray;
+}
+
+#menu .seasoning {
+    display: block;
+    color: limegreen;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#menu .price {
+    font-size: 30px;
+    font-weight: bold;
+    color: limegreen;
+    float: right;
+}
+
+/***********************画廊**********************/
+#gallery {
+    padding-bottom: 50px;
+}
+
+#gallery .classify {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#gallery .classify > .item {
+    border: 1px solid forestgreen;
+    display: inline-block;
+    color: forestgreen;
+    padding: 10px 20px;
+    margin: 0 5px 10px;
+    cursor: pointer;
+}
+
+#gallery .classify > .active {
+    background-color: forestgreen;
+    color: white;
+}
+
+#gallery .col {
+    padding: 0;
+}
+
+#gallery .box {
+    position: relative;
+}
+
+#gallery .box img {
+    width: 100%;
+}
+
+#gallery .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+#gallery .mask:hover {
+    opacity: 1;
+}
+
+#gallery .icon {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+/********************统计********************/
+#stats {
+    background-color: gainsboro;
+    padding: 50px;
+    text-align: center;
+}
+
+#stats .icon {
+    font-size: 40px;
+    color: forestgreen;
+}
+
+#stats .box {
+    margin-top: 50px;
+}
+
+#stats .box > p,
+#stats .box > h1 {
+    font-family: 'STXingkai';
+}
+
+#stats .box > p {
+    font-size: 20px;
+    color: grey;
+}
+
+/**********************chefs*****************/
+#chefs {
+    background-color: black;
+}
+
+#chefs .module-desc {
+    color: white;
+}
+
+#chefs .box {
+    width: 80%;
+    text-align: center;
+}
+
+#chefs .box > img {
+    width: 100%;
+}
+
+#chefs .box > p {
+    margin-top: 30px;
+    color: forestgreen;
+}
+
+#chefs .box > h1 {
+    color: lightgrey;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/****************反馈****************/
+#feedback {
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+#feedback .module-title {
+    font-size: 50px;
+}
+
+#feedback .desc {
+    max-width: 800px;
+    background-color: #F9f9f9;
+    margin: auto;
+    padding: 20px 15px 30px;
+    font-size: 15px;
+    color: darkgrey;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+#feedback .desc::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 15px solid transparent;
+    border-color: grey #F5f5f5 #F5f5f5 grey;
+    bottom: 0px;
+    right: 0px;
+}
+
+#feedback .person {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#feedback .person > img {
+    width: 70px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 20px;
+}
+
+#feedback .person .name {
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+#feedback .person .Occupation {
+    color: darkgrey;
+    font-size: 12px;
+}
+
+/*************联系**********/
+#contact {
+    padding: 50px 0;
+    overflow: hidden;
+}
+#contact .module-title{
+    font-size: 60px;
+}
+#contact input {
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    border: 1px solid gainsboro;
+    font-size: 18px;
+}
+
+/*#contact input::-webkit-input-placeholder{!*用于谷歌*!*/
+/*color: red;*/
+/*}*/
+/*#contact input::-moz-placeholder{!*用于火狐*!*/
+/*color: red;*/
+/*}*/
+/*#contact input:-ms-input-placeholder{!*用于微软*!*/
+/*color: red;*/
+/*}*/
+#contact textarea {
+    width: 100%;
+    resize: none;
+    height: 250px;
+    margin-top: 20px;
+    border: 1px solid gainsboro;
+}
+
+#contact button {
+    border-radius: unset;
+    background-color: forestgreen;
+    border:none;
+    padding: 15px;
+    margin: 10px auto;
+    color: white;
+    display: block;
+}
+#contact button:hover{
+    background-color: darkgreen;
+}
+/*******************Footer*********************/
+#footer{
+    padding: 50px;
+    background-color: rgb(17,17,17);
+}
+#footer .module-desc{
+    text-align: unset;
+    color: darkgrey;
+}
+#footer .F-left>.module-title{
+    text-align: unset;
+    font-size: 50px;
+    margin-left: 20px;
+}
+#footer .F-middle>.module-title,
+#footer .F-right>.module-title{
+    color: darkgrey;
+    font-size: 26px;
+    text-align: unset;
+    font-family: 'lishu';
+}
+#footer .F-right>h4{
+    color: darkgrey;
+}
+#footer .list-unstyled{
+    margin-top: 50px;
+    text-align: center;
+}
+#footer .list-unstyled>li{
+    display: inline-block;
+    border: 1px solid darkgrey;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+#footer .list-unstyled>li>span{
+    color: darkgrey;
+    line-height: 40px;
+}
+#footer>p{
+    margin-top: 40px;
+    text-align: center;
+}
+#footer>p>a{
+    color: darkgreen;
+}
